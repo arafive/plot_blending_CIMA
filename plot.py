@@ -15,8 +15,8 @@ from matplotlib.colors import BoundaryNorm
 plt.rc('font', weight='normal', size=6)
 
 lista_possibili_cartelle_lavoro = [
-    '/media/daniele/Daniele2TB/test/plot_blending_CIMA',
-    '/run/media/daniele.carnevale/Daniele2TB/test/plot_blending_CIMA',
+    '/media/daniele/Daniele2TB/repo/plot_blending_CIMA',
+    '/run/media/daniele.carnevale/Daniele2TB/repo/plot_blending_CIMA',
 ]
 
 cartella_lavoro = [
