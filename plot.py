@@ -128,7 +128,6 @@ for tempo in lista_tempi:
     for tif in lista_tif:
         percorso_tif = f'{cartella_tif}/{tif}'
         
-        
         data_blend, lat_blend, lon_blend = f_open_tiff(percorso_tif, coordinate)
         try:
             percorso_dpc_tif = f"{cartella_merging_DPC}/01/mcm1_{tif.split('.tif')[0].split('_')[-1]}.tif"
@@ -139,7 +138,6 @@ for tempo in lista_tempi:
         
         dict_cartella['blending'][tif] = data_blend
         dict_cartella['mcm1'][tif] = data_dpc
-        
 
     fig, axs = plt.subplots(9, 2, figsize=(8, 12), subplot_kw={'projection': ccrs.PlateCarree()})
     
